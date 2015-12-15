@@ -1,0 +1,17 @@
+{
+  "name": "naturalint/events",
+  "description": "Event models for the boost event driven infrastructure",
+  "license": "MIT",
+  "keywords": ["events"],
+  "authors": [
+    {
+      "name": "Yuval Dvir",
+      "email": "yuval.dvir@naturalint.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+  },
+  "autoload": {
+  }
+}

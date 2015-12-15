@@ -1,0 +1,18 @@
+{
+  "type" : "record",
+  "name" : "EventHeader",
+  "namespace" : "Events",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "string"
+  }, {
+    "name" : "key",
+    "type" : "string"
+  }, {
+    "name" : "schema_version",
+    "type" : "string"
+  }, {
+    "name" : "timestamp",
+    "type" : "long"
+  } ]
+}

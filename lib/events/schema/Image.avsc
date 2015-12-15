@@ -1,0 +1,9 @@
+{
+  "type" : "record",
+  "name" : "Image",
+  "namespace" : "Events.Cms",
+  "fields" : [ {
+    "name" : "url",
+    "type" : [ "null", "string" ]
+  } ]
+}

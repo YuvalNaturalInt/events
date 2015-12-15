@@ -1,0 +1,19 @@
+{
+  "type" : "record",
+  "name" : "Sponsored",
+  "namespace" : "Events.Cms",
+  "fields" : [ {
+    "name" : "text",
+    "type" : "string"
+  }, {
+    "name" : "image",
+    "type" : {
+      "type" : "record",
+      "name" : "Image",
+      "fields" : [ {
+        "name" : "url",
+        "type" : [ "null", "string" ]
+      } ]
+    }
+  } ]
+}

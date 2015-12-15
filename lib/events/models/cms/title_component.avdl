@@ -1,0 +1,18 @@
+@namespace("Events.Cms.Components")
+protocol Title
+{
+   import idl "../events.avdl";
+   import idl "cms.avdl";
+
+   record TitleData{
+        string title;
+        map<string> heading;
+        string width = "100%";
+   }
+
+   record TitleComponentEvent{
+     Events.EventHeader header;
+     Events.Cms.Component component_header;
+     TitleData data;
+   }
+}

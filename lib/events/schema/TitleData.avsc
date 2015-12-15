@@ -1,0 +1,19 @@
+{
+  "type" : "record",
+  "name" : "TitleData",
+  "namespace" : "Events.Cms.Components",
+  "fields" : [ {
+    "name" : "title",
+    "type" : "string"
+  }, {
+    "name" : "heading",
+    "type" : {
+      "type" : "map",
+      "values" : "string"
+    }
+  }, {
+    "name" : "width",
+    "type" : "string",
+    "default" : "100%"
+  } ]
+}

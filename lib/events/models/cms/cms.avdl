@@ -1,0 +1,28 @@
+@namespace("Events.Cms")
+protocol Cms{
+    record Component{
+        string id;
+        string type;
+        string name;
+        int version;
+        int variant;
+        array<Component> variants;
+        string layout_id;
+        string site_id;
+        string family;
+        map<union { null, string }> meta;
+        int external_id;
+        string single_container_id;
+        string cms_site_id;
+        string page_path;
+    }
+
+       record Image {
+         union { null, string} url;
+       }
+
+       record Sponsored {
+         string text;
+         Image image;
+       }
+}

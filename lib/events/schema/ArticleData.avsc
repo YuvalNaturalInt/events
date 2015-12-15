@@ -1,0 +1,44 @@
+{
+  "type" : "record",
+  "name" : "ArticleData",
+  "namespace" : "Events.Cms",
+  "fields" : [ {
+    "name" : "title",
+    "type" : "string"
+  }, {
+    "name" : "text",
+    "type" : "string"
+  }, {
+    "name" : "brief",
+    "type" : "string"
+  }, {
+    "name" : "link_text",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "link",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "sponsored",
+    "type" : {
+      "type" : "record",
+      "name" : "Sponsored",
+      "fields" : [ {
+        "name" : "text",
+        "type" : "string"
+      }, {
+        "name" : "image",
+        "type" : {
+          "type" : "record",
+          "name" : "Image",
+          "fields" : [ {
+            "name" : "url",
+            "type" : [ "null", "string" ]
+          } ]
+        }
+      } ]
+    }
+  }, {
+    "name" : "display_date",
+    "type" : "long"
+  } ]
+}

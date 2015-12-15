@@ -1,0 +1,102 @@
+{
+  "type" : "record",
+  "name" : "TitleComponentEvent",
+  "namespace" : "Events.Cms.Components",
+  "fields" : [ {
+    "name" : "header",
+    "type" : {
+      "type" : "record",
+      "name" : "EventHeader",
+      "namespace" : "Events",
+      "fields" : [ {
+        "name" : "id",
+        "type" : "string"
+      }, {
+        "name" : "key",
+        "type" : "string"
+      }, {
+        "name" : "schema_version",
+        "type" : "string"
+      }, {
+        "name" : "timestamp",
+        "type" : "long"
+      } ]
+    }
+  }, {
+    "name" : "component_header",
+    "type" : {
+      "type" : "record",
+      "name" : "Component",
+      "namespace" : "Events.Cms",
+      "fields" : [ {
+        "name" : "id",
+        "type" : "string"
+      }, {
+        "name" : "type",
+        "type" : "string"
+      }, {
+        "name" : "name",
+        "type" : "string"
+      }, {
+        "name" : "version",
+        "type" : "int"
+      }, {
+        "name" : "variant",
+        "type" : "int"
+      }, {
+        "name" : "variants",
+        "type" : {
+          "type" : "array",
+          "items" : "Component"
+        }
+      }, {
+        "name" : "layout_id",
+        "type" : "string"
+      }, {
+        "name" : "site_id",
+        "type" : "string"
+      }, {
+        "name" : "family",
+        "type" : "string"
+      }, {
+        "name" : "meta",
+        "type" : {
+          "type" : "map",
+          "values" : [ "null", "string" ]
+        }
+      }, {
+        "name" : "external_id",
+        "type" : "int"
+      }, {
+        "name" : "single_container_id",
+        "type" : "string"
+      }, {
+        "name" : "cms_site_id",
+        "type" : "string"
+      }, {
+        "name" : "page_path",
+        "type" : "string"
+      } ]
+    }
+  }, {
+    "name" : "data",
+    "type" : {
+      "type" : "record",
+      "name" : "TitleData",
+      "fields" : [ {
+        "name" : "title",
+        "type" : "string"
+      }, {
+        "name" : "heading",
+        "type" : {
+          "type" : "map",
+          "values" : "string"
+        }
+      }, {
+        "name" : "width",
+        "type" : "string",
+        "default" : "100%"
+      } ]
+    }
+  } ]
+}

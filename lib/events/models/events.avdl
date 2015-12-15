@@ -1,0 +1,11 @@
+@namespace("Events")
+protocol Events{
+    record EventHeader {
+        string id;
+        string key;
+        string schema_version;
+        long timestamp;
+
+    }
+}
+

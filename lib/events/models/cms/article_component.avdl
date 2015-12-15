@@ -1,0 +1,22 @@
+@namespace("Events.Cms")
+protocol Article
+{
+   import idl "../events.avdl";
+   import idl "cms.avdl";
+
+   record ArticleData {
+        string title;
+        string text;
+        string brief;
+        union { null, string } link_text;
+        union { null, string } link;
+        Sponsored sponsored;
+        long display_date;
+   }
+
+   record ArticleComponentEvent{
+        Events.EventHeader header;
+        Events.Cms.Component component_header;
+        ArticleData data;
+   }
+}
