@@ -49,6 +49,7 @@ bower.json
 .powenv
 
 /.idea/
+/.idea/workspace.xml
 /.idea/*
 
 /lang/
